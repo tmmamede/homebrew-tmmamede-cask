@@ -8,7 +8,7 @@ cask "firebird" do
   desc "Relational SQL database management system"
   homepage "https://firebirdsql.org/"
 
-  pkg "Firebird-#{version}-0-macos-arm64.pkg"
+  pkg "Firebird-#{version}.1683-0-macos-arm64.pkg"
 
   uninstall pkgutil: "org.firebirdsql.firebird"
 end
