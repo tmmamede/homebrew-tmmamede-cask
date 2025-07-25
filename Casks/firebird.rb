@@ -1,14 +1,14 @@
 cask "firebird" do
-  version "4.0.3"
-  sha256 "9f5aa4ddad997a0f3f7f7fef7d3952936b1a3f77cc98ea47b0ae91c3192766a1"
+  version "5.0.3.1683"
+  sha256 "07e06ba4c0f13c9c39b65b854d1e66b59bfcfbd1513c22e753f2d32421cc7fad"
 
-  url "https://github.com/FirebirdSQL/firebird/releases/download/R#{version}/Firebird-#{version}-0-x86_64.pkg",
+  url "https://github.com/FirebirdSQL/firebird/releases/download/v#{version}/Firebird-#{version}-0-macos-arm64.pkg",
       verified: "github.com/FirebirdSQL/firebird/"
   name "Firebird"
   desc "Relational SQL database management system"
   homepage "https://firebirdsql.org/"
 
-  pkg "Firebird-#{version}-0-x86_64.pkg"
+  pkg "Firebird-#{version}-0-macos-arm64.pkg"
 
   uninstall pkgutil: "org.firebirdsql.firebird"
 end
